@@ -4,51 +4,73 @@
     <title>Emmanuel Núñez Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
-      <nav class="nav">
-        <ul class="navlist">
-          <li>
-            <a href="https://github.com/MannyNR">Projects</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/emmanuelnunez/">LinkedIn</a>
-          </li>
-          <li><a href="mailto:mannynunezr@gmail.com">Contact Me</a></li>
-        </ul>
-      </nav>
-      <h1>Emmanuel Núñez: Intro</h1>
+      <div class="main-container">
+        <div class="greeting">
+          <h1>Hi, I'm Emmanuel Núñez</h1>
+        </div>
+        <div class="intro-wrapper">
+          <nav class="nav">
+            <ul class="navlist">
+              <li>
+                <a href="https://github.com/MannyNR">Projects</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/emmanuelnunez/"
+                  >LinkedIn</a
+                >
+              </li>
+              <li><a href="ENunez Portfolio Resume.pdf">Resume</a></li>
+              <li><a href="mailto:mannynunezr@gmail.com">Contact Me</a></li>
+            </ul>
+          </nav>
+          <!-- <div class="left-column">left-column</div>
+          <div class="right-column">right-column</div> -->
+        </div>
+      </div>
     </header>
     <section class="about">
-      <img class="profile" src="/images/profile.jpeg" />
-      <h1>About Me</h1>
-      <p>
-        Hi! My name is Emmanuel Núñez and I am from Brooklyn, NY. I am a proud
-        cat dad and am a recent software-engineer graduate at General Assembly
-        after over a decade in photo/video sales.
-      </p>
-      <img class="gif" src="cat.gif" />
+      <div class="main-container">
+        <img class="profile" src="/images/profile.jpeg" />
+        <h1>About Me</h1>
+        <p>
+          Hi! My name is Emmanuel Núñez and I am from Brooklyn, NY. I am a proud
+          cat dad and am a recent software-engineer graduate at General Assembly
+          after over a decade in photo/video sales.
+        </p>
+        <img class="gif" src="/images/cat.gif" />
+      </div>
     </section>
     <section class="hobbies">
-      <h1>My Hobbies</h1>
-      <p>
-        When not coding, I love to spend time with my family and friends. I also
-        love to travel, eat around, and capture moments with my camera.
-        Practicing Jiu-jitsu and coding whenever possible. I tend to deep dive
-        into things like currently; making beer at home, personal finance, and
-        learning about new tech. Wordle is life right now! I also play Words
-        with friends every day, if you care for a challenge,
-        <a href="https://words2.page.link/M4PH">PLAY ME</a>.
-      </p>
+      <div class="main-container">
+        <h1>My Hobbies</h1>
+        <p>
+          When not coding, I love to spend time with my family and friends. I
+          also love to travel, eat around, and capture moments with my camera.
+          Practicing Jiu-jitsu and coding whenever possible. I tend to deep dive
+          into things like currently; making beer at home, personal finance, and
+          learning about new tech. Wordle is life right now! I also play Words
+          with friends every day, if you care for a challenge,
+          <a href="https://words2.page.link/M4PH">PLAY ME</a>.
+        </p>
+      </div>
     </section>
-    <h1>Some of my photography</h1>
-    <footer class="picgrid">
-      <img src="./images/Luny.jpeg" />
-      <img src="./images/peaches.jpeg" />
-      <img src="./images/fries.jpeg" />
-      <img src="./images/freedomtower.jpeg" />
-    </footer>
+    <div class="main-container">
+      <h1>Some of my photography</h1>
+      <footer class="picgrid">
+        <img src="/images/Luny.jpeg" />
+        <img src="/images/peaches.jpeg" />
+        <img src="/images/fries.jpeg" />
+        <img src="/images/freedomtower.jpeg" />
+      </footer>
+    </div>
   </body>
 </html>

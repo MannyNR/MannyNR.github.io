@@ -1,7 +1,124 @@
+:root {
+  --mainColor: rgba(209, 209, 209, 0.5);
+  --subColor: white;
 
-html, body {
+  --borderColor: gray;
+
+  --mainText: black;
+  --subText: #404549;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: "Russo One", sans-serif;
+  color: var(--mainText);
+}
+
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+
+p,
+li,
+span,
+label {
+  font-family: "Roboto Mono", monospace;
+  color: var(--subText);
+}
+
+.greeting {
+  display: grid;
+  text-align: center;
+  align-content: center;
+  min-height: 10em;
+}
+
+.intro-wrapper {
+  background-color: var(--subColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 5px 5px 0 0;
+
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
+  display: grid;
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3em 30em; */
+  grid-template-areas:
+    "nav nav"
+    "left-column right-column";
+}
+
+.nav {
+  grid-area: nav;
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.navlist {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 35px;
+}
+
+.left-column {
+  grid-area: left-column;
+}
+
+.right-column {
+  grid-area: right-column;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(57, 149, 179);
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+header,
+.hobbies {
+  overflow: auto;
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.about,
+footer {
+  overflow: auto;
+  background-color: var(--subColor);
+  border-bottom: 1px solid var(--borderColor);
 }
 
 img {
@@ -10,7 +127,6 @@ img {
 }
 
 .profile {
-  border-radius: 100px;
   border: solid white 2px;
   width: 30vh;
   align-content: center;
@@ -22,42 +138,22 @@ img {
   width: 50%;
 }
 
-.nav {
-  justify-content: center;
-  align-content: space-around;
-  align-items: center;
-  margin: 25px;
-}
-
-.navlist {
-  display: flex;
-  list-style: none;
-  border-bottom: 2px solid black;
-  padding: 25px;
-  justify-content: space-around;
-  margin-bottom: 25px;
-}
-
-
-
 .picgrid {
   display: grid;
   grid-template-columns: repeat (1, 1fr);
   grid-gap: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
+}
+
 @media (min-width: 640px) {
   .picgrid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
-  }
-
-  p {
-    font-size: 24px;
-  }
-
-  h1 {
-    font-size: 36px;
   }
 }
 
@@ -66,27 +162,11 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
   }
-
-  p {
-    font-size: 36px;
-  }
-
-  h1 {
-    font-size: 48px;
-  }
 }
 
 @media (min-width: 1024px) {
   .picgrid {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
-  }
-
-  p {
-    font-size: 48px;
-  }
-
-  h1 {
-    font-size: 64px;
   }
 }
