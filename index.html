@@ -8,7 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link id="theme-style" rel="stylesheet" href="">
   </head>
 
   <body>
@@ -22,24 +23,38 @@
           <nav class="nav">
             <ul class="navlist">
               <li>
-                <a href="https://github.com/MannyNR">Projects</a>
+                <a target="_blank" href="https://github.com/MannyNR"
+                  >Projects</a
+                >
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/emmanuelnunez/"
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/emmanuelnunez/"
                   >LinkedIn</a
                 >
               </li>
-              <li><a href="ENunez Portfolio Resume.pdf">Resume</a></li>
-              <li><a href="mailto:mannynunezr@gmail.com">Contact</a></li>
+              <li>
+                <a target="_blank" href="ENunez Portfolio Resume.pdf">Resume</a>
+              </li>
+              <li>
+                <a target="_blank" href="mailto:mannynunezr@gmail.com"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </nav>
 
           <div class="left-column">
-            <img class="profile-pic" src="/images/profile.jpeg" alt="profile of myself" />
+            <img
+              class="profile-pic"
+              src="/images/profile.jpeg"
+              alt="profile of myself"
+            />
             <h5 style="text-align: center; line-height: 0">Dark/Light theme</h5>
             <div id="theme-options-wrapper">
-              <div id="dark-mode" class="theme-dot" alt="Dark theme"></div>
-              <div id="light-mode" class="theme-dot" alt="Light theme"></div>
+              <div data-mode="dark" id="dark-mode" class="theme-dot" alt="Dark theme"></div>
+              <div data-mode="light" id="light-mode" class="theme-dot" alt="Light theme"></div>
             </div>
           </div>
 
@@ -48,9 +63,9 @@
               <div id="preview">
                 <div id="corner-tl" class="corner"></div>
                 <div id="corner-tr" class="corner"></div>
-                <h2>About Me</h2>
+                <h4>What I Do</h4>
                 <p>
-                  Hi! I'm Manny, a cat dad and recent Software-Engineer graduate from General Assembly with over a decade in photo/video sales.
+                  I have over a decade in photo/video sales experience and am now a Software Engineer interested in developing tech for social good.
                 </p>
                 <div id="corner-bl" class="corner"></div>
                 <div id="corner-br" class="corner"></div>
@@ -61,29 +76,122 @@
       </div>
     </header>
 
-    <section class="hobbies">
+    <section class="tech">
       <div class="main-container">
-        <h1>More about me</h1>
+        <h2>Technologies I'm using</h2>
         <p>
-          When not coding, I love to spend time with my family and friends. I
-          also love to travel, eat around, and capture moments with my camera.
-          Practicing Jiu-jitsu and coding whenever possible. I tend to deep dive
-          into things like currently; making beer at home, personal finance, and
-          learning about new tech. Wordle is life right now! I also play Words
-          with friends every day, if you care for a challenge,
-          <a href="https://words2.page.link/M4PH">PLAY ME</a>.
+          I'm constantly learning and my goal is to be a well-rounded Fullstack Developer. I find myself gravitating more towards databases and backend technologies, and am primarily focusing on developing these skills at the moment. <span style="font-weight:bold; color:rgb(57, 149, 179)">Backend > Frontend 🤷🏽‍♂️ </span>
         </p>
+
+        <div class="skills">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>MongoDB</li>
+            <li>Express</li>
+          </ul>
+          <ul>
+            <li>Python</li>
+            <li>Django</li>
+            <li>SQL</li>
+            <li>Postgres</li>
+            <li>React</li>
+          </ul>
+        </div>
+<br />
+        <hr />
+
+<h2>Some of my past projects</h2>
+<br />
+<div class="project-wrapper">
+
+<section>
+<div class="project">
+  <img class="thumbnail" src="/images/Trivia.png" alt="Trivia homepage" />
+<div class="project-preview">
+  <h6 class="project-title">Trivia</h6>
+  <br />
+  <p class="project-description">A UI pattern project using tabs for Trivia categories utilizing Axios to fetch data from an API. Built using React, HTML, CSS and JavaScript.</p>
+  <br />
+  <a target="_blank" href="https://github.com/MannyNR/Trivia-with-react">Link to repository</a>
+</div> 
+</div>
+</section>
+
+<section>
+<div class="project">
+  <img class="thumbnail" src="/images/ReactFrontend.png" alt="React Front end for Michel's Game API" />
+  <div class="project-preview">
+    <h6 class="project-title">React Frontend for Game API</h6>
+    <br />
+    <p class="project-description">A front-end app using React for a colleague's API; inspired by GameStop. Built using React, HTML, CSS and JavaScript.</p>
+    <br />
+    <br />
+  <a target="_blank" href="https://github.com/MannyNR/Michel-Game-Api-Frontend">Link to repository</a>
+</div>
+</div>
+</section>
+
+<section>
+<div class="project">
+  <img class="thumbnail" src="/images/CRUD.png" alt="MongoDB & Express Movie API" />
+  <div class="project-preview">
+    <h6 class="project-title">IMBD Top 100 Superhero Movies API</h6>
+    <br />
+    <p class="project-description">A JSON API following the CRUD standard. Built using Node, MongoDB, Mongoose and Express.</p>
+    <br />
+    <br />
+    <br />
+  <a target="_blank" href="https://github.com/MannyNR/Top-100-Superhero-Movies-API">Link to repository</a>
+</div>
+</div>
+</section>
+
+</div>
+    </section>
+        </div>
+
+        <section class="hobbies">
+          <div class="main-container">
+        <h2>About me</h2>
+        <p>
+          When not coding, I enjoy spending time with my family (proud cat dad) and friends exploring the city and trying new restaurants. I love to travel and capture moments with my camera; I'm currently shooting with a Fuji X-T4. I've been practicing Jiu-jitsu for about 2 years and really enjoy the discipline of the sport and to me it feels like a physical game of chess.
+        </p>
+        <div class="picgrid2">
+          <img src="/images/Dojo.JPG" />
+          <img src="/images/Snuggled.jpg" />
+          <img src="/images/Dojovideographer.JPG" />
+        </div>
+        <ul>
+          <li>What I'm listening to 🎧: Bad Bunny, Kendrick Lamar, Luis Miguel </li>
+          <li>What I'm playing 🎮: Wordle, Quordle, Words with Friends (<a target="_blank" href="https://words2.page.link/M4PH">PLAY ME</a>)</li>
+          <li>What I'm watching 📺: Young Justice, YT videos on coding, UFC</li>
+          <li>What I'm reading 📖: Atomic Habits</li>
+          <li>What I'm learning 💻: Python, Django, personal finance</li>
+          <li>What I'm snacking on 🍿: Platano chips, Trail mix, gummy bears</li>
+        </ul>
+
       </div>
     </section>
 
-    <div class="main-container">
-      <h1>Some of my photography</h1>
+    <div class="main-container photos">
+      <h2>Some of my photography</h2>
       <footer class="picgrid">
+        <img src="/images/BlackBeachIceland.jpg" />
         <img src="/images/Luny.jpeg" />
-        <img src="/images/peaches.jpeg" />
-        <img src="/images/fries.jpeg" />
+        <img src="/images/Muir Woods.jpg" />
         <img src="/images/freedomtower.jpeg" />
+        <img src="/images/911.jpg" />
+        <img src="/images/DojoCobrinha.JPG" />
+        <img src="/images/peaches.jpeg" />
+        <img src="/images/ChineseNewYear.jpeg" />
       </footer>
     </div>
-  </body>
+<br />
+<br />
+<br />
+<script type="text/javascript" src="script.js"></script>
+
+</body>
 </html>

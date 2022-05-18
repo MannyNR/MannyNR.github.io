@@ -1,0 +1,14 @@
+:root {
+  --mainColor: rgb(29, 29, 29);
+  --subColor: rgb(42, 42, 42);
+
+  --borderColor: rgb(23, 77, 89);
+
+  --mainText: white;
+  --subText: rgb(180, 178, 178);
+
+  --themeDotBorder: white;
+
+  --previewBG: rgba(25, 39, 52, 0.8);
+  --previewShadow: rgb(17, 25, 33);
+}
